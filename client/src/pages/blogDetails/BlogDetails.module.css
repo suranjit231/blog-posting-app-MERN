@@ -1,0 +1,101 @@
+.blogDetailsContainer {
+    width: 100%;
+    min-height: calc(100vh - 48px);
+    padding: 20px;
+    display: flex;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    /* border: 1px solid red; */
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blogTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: justify;
+    
+}
+
+
+.blogImageBox{
+    flex: 1 1;
+    min-width: 330px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightBolgDetails{
+    flex: 1 1;
+    min-width: 330px;
+    /* border: 1px solid green; */
+}
+
+.blogImage {
+    width: 100%;
+    /* max-width: 300px; */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rightBolgDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blogContent {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.actionsContainer {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+}
+
+.actionsContainer .iconButton:nth-child(2){
+    color: red;
+}
+
+.actionsContainer .iconButton:nth-child(3){
+    color: blue;
+}
+
+
+.iconButton {
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+.iconButton:hover {
+    transform: scale(1.1);
+}
+
+.heartIcon {
+    color: var(--like-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.heartIcon:hover {
+    transform: scale(1.2);
+    color: var(--like-hover-color);
+}
+
+.loadingSpinner {
+    margin-top: 50px;
+}

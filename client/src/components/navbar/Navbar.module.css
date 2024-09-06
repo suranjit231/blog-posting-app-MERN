@@ -1,0 +1,180 @@
+/* Navbar.module.css */
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    box-shadow: 0 4px 2px -2px var(--box-shadow-color);
+    padding: 5px 20px;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.rightNavbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.searchIcons {
+    font-size: 22px;
+    color: var(--icon-color);
+    cursor: pointer;
+    transition:0.3s ease-in-out;
+}
+
+.searchIcons:hover {
+    color: var(--icon-hover-color);
+}
+
+.searchIcons:active {
+    transform: scale(0.85);
+}
+
+.addBlogLink, .logoutBtn {
+    color: var(--text-color);
+    transition:0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.addBlogLink:active, .logoutBtn:active {
+    transform: scale(0.85);
+}
+
+.themeButtonDiv {
+    width: 40px;
+    height: 20px;
+    background-color: var(--switch-bg);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.themeButtonDiv span {
+    height: 20px;
+    width: 20px;
+    background-color: var(--button-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    transition: left 0.3s ease-in-out;
+}
+
+.themeButtonDiv.dark span {
+    left: 20px;
+}
+
+/* =========== search div =============== */
+.searchDiv {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.searchDiv.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+}
+
+.searchDiv input {
+    flex: 1;
+    padding: 7px 35px;
+    border: 1px solid var(--icon-color);
+    border-radius: 30px;
+    /* background-color: var(--bg-color); */
+    background-color: rgba(81, 208, 247, 0.425);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: none;
+}
+
+.searchDiv.active input{
+    display: block;
+}
+
+.inputSearchIcon {
+    display: none;
+}
+
+.inputSearchIcon.active{
+    position: absolute;
+    right: 8px;
+    color: var(--icon-color);
+    transition: color 0.3s ease-in-out;
+    display: block;
+}
+
+.backIcons {
+   display: none;
+}
+
+.backIcons.active{
+    position: absolute;
+    left: 5px;
+    font-size: 25px;
+    color: var(--icon-color);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: block;
+}
+
+.backIcons:hover {
+    color: var(--icon-hover-color);
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:560px) {
+    .logo{
+        font-size: 18px;
+    }
+
+    .addBlogLink, .logoutBtn{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+
+    .searchIcons {
+        font-size: 18px;
+       
+    }
+
+    .themeButtonDiv {
+        width: 36px;
+        height: 18px;
+       
+    }
+
+    .themeButtonDiv span {
+        height: 18px;
+        width: 18px;
+       
+    }
+    
+    .themeButtonDiv.dark span {
+        left: 18px;
+    }
+
+    .navbarContainer{
+        padding: 5px 12px;
+    }
+}

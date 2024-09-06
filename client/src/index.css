@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body,html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background-color: var(--bg-color);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  --bg-color: #ffffff;
+  --text-color: #000024;
+  --secondary-text-color:grey;
+  --icon-color: rgba(0, 0, 36, 0.788);
+  --icon-hover-color: #000024;
+  --switch-bg: gray;
+  --button-color: aliceblue;
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --secondary-text-color:silver;
+  --icon-color: rgba(255, 255, 255, 0.788);
+  --icon-hover-color: #ffffff;
+  --switch-bg: #444444;
+  --button-color: #bbbbbb;
+  --box-shadow-color: rgba(255, 255, 255, 0.2);
+} */
+
+
+
+
+
+:root {
+  /* Light Theme Colors */
+  --bg-color: #ffffff; /* Form background */
+  --primary-bg-color: #f0f0f0; /* Primary background */
+  --secondary-bg-color: #e0e0e0; /* Secondary background */
+  --tertiary-bg-color: #d0d0d0; /* Tertiary background */
+
+  --text-color: #000024; /* Default text color */
+  --primary-text-color: #333333; /* Primary text color */
+  --secondary-text-color: grey; /* Secondary text color */
+  --tertiary-text-color: #666666; /* Tertiary text color */
+
+  --icon-color: rgba(0, 0, 36, 0.788); /* Icon color */
+  --icon-hover-color: #000024; /* Icon hover color */
+  --switch-bg: gray; /* Switch background */
+  --button-color: aliceblue; /* Button text color */
+  --box-shadow-color: rgba(0, 0, 0, 0.2); /* Box shadow color */
+}
+
+[data-theme="dark"] {
+  /* Dark Theme Colors */
+  --bg-color: #121212; /* Form background */
+  --primary-bg-color: #1a1a1a; /* Primary background */
+  --secondary-bg-color: #222222; /* Secondary background */
+  --tertiary-bg-color: #2a2a2a; /* Tertiary background */
+
+  --text-color: #ffffff; /* Default text color */
+  --primary-text-color: #e0e0e0; /* Primary text color */
+  --secondary-text-color: silver; /* Secondary text color */
+  --tertiary-text-color: #cccccc; /* Tertiary text color */
+
+  --icon-color: rgba(255, 255, 255, 0.788); /* Icon color */
+  --icon-hover-color: #ffffff; /* Icon hover color */
+  --switch-bg: #444444; /* Switch background */
+  --button-color: #bbbbbb; /* Button text color */
+  --box-shadow-color: rgba(255, 255, 255, 0.2); /* Box shadow color */
+}
+
+.loader{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
